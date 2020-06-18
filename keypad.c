@@ -42,7 +42,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 		}
 		else if(c2==0)
 		{
@@ -55,7 +55,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 			
 		}
 		else if(c3==0)
@@ -73,7 +73,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 			
 		}
 		//row 2 scanning.
@@ -92,7 +92,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 		}
 		else if(c2==0)
 		{
@@ -107,7 +107,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 
 			
 		}
@@ -122,7 +122,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 		}
 
 		//row 3 scanning.
@@ -143,7 +143,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 		}
 		else if(c2==0)
 		{
@@ -160,7 +160,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 			
 		}
 		else if(c3==0)
@@ -176,7 +176,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();	
+	                delay();	
 			
 		}
 		//row 4 scanning.
@@ -195,7 +195,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 		}
 		else if(c2==0)
 		{
@@ -211,7 +211,7 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 		}
 		else if(c3==0)
 		{
@@ -226,14 +226,14 @@ void main()
 			delay();
 			delay();
 			lcdcmd(0x01);// clear display
-	        delay();
+	                delay();
 			
 		}
 		r4=1;
 
 	}	 
 }
-
+//function for command
 void lcdcmd(unsigned char val)
 {
 	P2=val;
@@ -243,7 +243,7 @@ void lcdcmd(unsigned char val)
 	delay();
 	en=0;
 }
-
+//function for passing data on lcd
 void lcddat(unsigned char dat)
 {
 	P2=dat;
@@ -253,7 +253,7 @@ void lcddat(unsigned char dat)
 	delay();
 	en=0;
 }
-
+// delay function.
 void delay()
 {
 	unsigned int i;
